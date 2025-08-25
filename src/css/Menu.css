@@ -1,0 +1,299 @@
+#Carrito {
+	position: relative;
+	color: #fff;
+	width: 50px;
+}
+
+#Cantidad {
+	color: #fff;
+	border: solid 1px #dc3545;
+	background-color: #dc3545;
+	font-weight: bold;
+	height: 30px;
+	width: 30px;
+	border-radius: 15px;
+	position: absolute;
+	top: -3px;
+	right: -5px;
+}
+
+.btn-All {
+	color: #ffffff !important;
+	background-color: #2077bd;
+}
+
+.Logo {
+	height: 150px;
+	display: flex;
+	justify-content: space-around;
+	background-color: #fff;
+}
+
+img {
+	width: 50%;
+	height: 100%;
+}
+
+.Busquda {
+	height: 55px;
+	padding: 10px;
+	background-color: #ffc107;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Busquda button {
+	border: none;
+	padding: 5px 10px;
+	background-color: #ffc107;
+}
+
+.Busquda i {
+	color: #fff;
+	font-size: 29px;
+}
+
+
+#Busqueda {
+	border-radius: 5px;
+	border: none;
+	width: 90%;
+	height: 100%;
+	font-weight: 800;
+	font-size: 19px;
+}
+
+
+
+#Mesa {
+	color: #ffc107;
+	font-size: 28px;
+	font-weight: bold;
+	margin: 0px;
+}
+
+
+#Menu {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	align-items: center;
+	grid-gap: 10px;
+	margin: 10px 10px;
+	padding: 5px;
+	min-height: 61vh;
+	max-height: 61vh !important;
+	border: solid var(--color1) 1px;
+	/* background-image: url('../img/fondo.jpg');
+	background-repeat: no-repeat; */
+}
+
+@media (max-width: 640px) {
+	#Menu {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.Departamento {
+
+	font-size: 18px;
+	font-weight: bold;
+	border: #ff00 solid 2px;
+	width: 100%;
+	height: 90px;
+	border-radius: 9px 9px;
+	text-align: center;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0px 15px;
+	color: #000000;
+	box-shadow: 0px 5px 6px 0px #363636b3;
+	word-break: break-word;
+}
+
+.btn-info {
+	color: #fff;
+}
+
+#List_Arti .List-Article {
+	margin: 20px 0px;
+	padding: 10px 5px;
+	min-height: 68vh;
+	max-height: 68vh !important;
+	border: solid var(--color1) 1px;
+}
+
+
+#List_Arti .Article {
+	padding: 10px;
+	width: 100%;
+	height: auto;
+	min-height: 100px;
+	border-radius: 5px;
+	color: #0574ed;
+	;
+	position: relative;
+	box-shadow: 0px 5px 6px 0px #363636b3;
+	margin-bottom: 10px;
+	text-align: left;
+
+}
+
+#List_Arti .Article.disable {
+	background-color: #dedede;
+}
+
+
+.Rows {
+	display: grid;
+	grid-auto-flow: column dense;
+	grid-template-columns: 70% 29%;
+	grid-template-rows: 4fr;
+	gap: 6px;
+}
+
+#List_Arti .Article img {
+	margin: 10px 0px 5px 0px;
+	width: 100%;
+	height: 120px;
+	border-radius: 5px;
+
+}
+
+
+.Article .Descrip {
+	font-size: 18px;
+	color: #000000;
+	font-weight: bold;
+	word-break: break-word;
+}
+
+.Article .nota {
+	font-size: 12px;
+	font-weight: 500;
+	word-break: break-word;
+	line-height: normal;
+	display: block;
+}
+
+.Article .subtitle {
+	color: #17a2b8;
+	font-size: 12px;
+	font-weight: bold !important;
+	word-break: break-word;
+	display: block;
+}
+
+.Article .guarni {
+	/*color: #ca0000;*/
+	color: #28a745;
+	font-size: 10px;
+	font-weight: 500 !important;
+	word-break: break-word;
+}
+
+.Article .Precio {
+	font-size: 20px;
+	margin: 0px;
+	font-weight: bold;
+}
+
+
+
+#List_Arti .Header {
+	display: grid;
+	margin-bottom: 15px;
+	border-radius: 10px;
+	grid-template-columns: 0.2fr 2.8fr;
+	align-items: center;
+}
+
+#List_Arti .Header i {
+	font-size: 40px;
+}
+
+#List_Arti .Titulo {
+	font-size: 25px;
+	font-weight: bold;
+	margin: 0px;
+	color: #ffffff;
+}
+
+
+#List_Arti .List-Article2 {
+	margin: 10px 0px;
+	padding: 10px 5px;
+	min-height: 68vh;
+	max-height: 68vh !important;
+	border: solid var(--color1) 1px;
+	margin: 20px 0px;
+}
+
+.Title {
+	/*background-color: #da532080;*/
+	background-color: #17a2b8;
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+	padding: 5px;
+	border-radius: 10px;
+	box-shadow: 0px 5px 6px 0px #363636b3;
+}
+
+#List_Arti .Elements {
+	margin: 10px 0px;
+	padding: 10px 5px;
+}
+
+
+
+.swal2-popup {
+	padding-bottom: 0em !important;
+	width: 39em !important;
+}
+
+.swal2-actions {
+	margin: 0.25em auto !important;
+}
+
+.swal2-cancel {
+	background-color: #2196f3 !important;
+	font-weight: 700 !important;
+}
+
+.Header {
+	/*background-color: #db915c;*/
+	background-color: #e74452;
+	border-radius: 10px;
+	box-shadow: 0px 5px 6px 0px #363636b3;
+
+}
+
+
+
+.swal2-close i {
+	font-size: 40px;
+}
+
+.swal2-actions button {
+	font-weight: bold;
+}
+
+.Nota {
+	color: #ca0000;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	text-align: left;
+}
+
+.imagen2 {
+	position: absolute;
+	Top: 1%;
+	left: 2.5%;
+	width: 95% !important;
+	height: 128px !important;
+}

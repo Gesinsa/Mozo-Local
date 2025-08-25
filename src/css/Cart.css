@@ -1,0 +1,64 @@
+nav {
+	box-shadow: 0px 0px 13px #000;
+	justify-content: flex-start !important;
+}
+
+#Cerrar {
+	width: 20vw;
+	border-right: 2px solid #c0c0c0;
+	margin-right: 5vw;
+}
+.navbar>div>i {
+  font-size: 26px !important;
+}
+#Cerrar i {
+	color: #ffffff;
+}
+
+.invoice{
+	height: 82vh;
+}
+
+.invoice .Article.Old{
+	background-color: #a9f4ba;
+}
+
+.invoice .Article.Old_Delete{
+	background-color: #ff3b3b;
+	color: #fff;
+}
+
+.Buttons {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 5px;
+	padding: 5px;
+}
+
+#Pagar {
+	font-size: 22px;
+   font-weight: bold;
+   display: inline-block;
+   border-radius: 10px;
+   height: 60px;
+   color: #fff;
+   background-color: #007bff;
+   border-color: #007bff;
+   border-style: solid;
+	width: auto;
+	margin: 0;
+}
+
+
+#Imprimir {
+	font-size: 22px;
+	font-weight: bold;
+	border: none;
+	border-radius: 10px;
+	width: auto;
+	height: 60px;
+	color: #fff;
+	background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+

@@ -1,0 +1,152 @@
+html {
+	font-size: 12px;
+}
+
+nav.navbar {
+	padding: 0px;
+	height: 36px;
+}
+
+main {
+	width: 100vw;
+	height: calc(100vh - 36px);
+	display: grid;
+	grid-template-rows: 50px auto auto auto;
+	justify-items: center;
+	align-items: start;
+	position: relative;
+	height: fit-content;
+}
+
+.parallax {
+	/* The image used */
+	background-image: url("../img/bg.jpg");
+	/* Set a specific height */
+	height: 100vh;
+	width: 100vw;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.parallax:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.6);
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+#keyboard {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	gap: 15px;
+	padding: 10px 0px;
+	margin-top: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.pin {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: clamp(80px, 90px, 110px);
+	height: clamp(80px, 90px, 110px);
+	color: black;
+	background-color: #ffffff;
+	border-radius: 360px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 30px;
+	outline:0;
+	box-shadow: none;
+}
+
+.btn:focus{
+	box-shadow: none;
+}
+
+.btn:active{
+	animation-name: click;
+	animation-duration: 2s;
+	animation-delay: 500ms;
+}
+
+.pin-send {
+	background-color: #f05454;
+}
+
+.pin-delete {
+	background-color: #f05454;
+}
+
+.code {
+	margin: 5px;
+	padding: 16.5px;
+	border-radius: 360px;
+	border: 2px solid rgb(255, 255, 255);
+	height: fit-content;
+}
+
+#error {
+	font-size: 16px;
+	font-weight: 600;
+	height: fit-content;
+}
+
+#code {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	height: fit-content;
+	margin: 5px;
+}
+
+
+.code-checked {
+	background-color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+	color: #000000 !important;
+}
+
+
+@keyframes click {
+  to {transform: scale(1);}
+  from {transform: scale(0.9);}
+}
+
+
+@Media only screen and (min-width: 550px){
+	#keyboard {
+		gap: 20px;
+	}
+
+	.pin {
+		width: 135px;
+		height: 135px;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	#keyboard {
+		gap: 15px;
+	}
+
+	.pin {
+		width: 100px;
+		height: 100px;
+	}
+}

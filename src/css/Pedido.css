@@ -1,0 +1,430 @@
+.status-bar {
+	width: 100%;
+	margin-bottom: 10px;
+	background-color: rgba(255, 255, 255, 0.741);
+	color: rgb(0, 0, 0) !important;
+	display: flex !important;
+	justify-content: center !important;
+	box-shadow: 0px 0px 13px #000;
+	padding: 5px 0px;
+}
+
+.btn-lg {
+	font-size: 16px;
+}
+
+.status-bar div {
+	margin: 0 4px;
+}
+
+.navbar>div>i {
+	font-size: 16px;
+}
+
+#Nombre input {
+	font-size: 18px;
+	font-weight: bold;
+	border: none;
+	color: #d14040;
+	width: 77%;
+}
+
+#Nombre input::placeholder {
+	color: #d14c4c;
+}
+
+.invoice {
+	margin: 10px 5vw;
+	background-color: #515151;
+	border-radius: 10px;
+	height: 77.5vh;
+	padding: 10px 20px 10px 20px;
+	border: solid 2px #3e3e3e;
+}
+
+.invoice-Header {
+	display: grid;
+	grid-template-columns: 2fr 1.4fr;
+	height: auto;
+	margin-bottom: 10px;
+	width: 100%;
+	color: #fff;
+}
+
+.invoice-Header h4,
+.invoice-Header h5 {
+	margin: 0px;
+	display: inline-block;
+}
+
+.invoice-Header #Mesa {
+	color: #ffc107;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.Options {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.Options i {
+	font-size: 22px;
+}
+
+.leaves {
+	width: 100%;
+	height: 91%;
+	background-color: #fff;
+	padding: 5px 10px 15px 10px;
+}
+
+.header-leaves {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	justify-items: center;
+	gap: 10px;
+	width: 100%;
+	height: 20px;
+}
+
+.header-leaves span {
+	position: relative;
+	background-color: #515151;
+	border-radius: 10px;
+	width: 20px;
+}
+
+.header-leaves span::before {
+	position: absolute;
+	top: -11px;
+	left: 2px;
+	content: "";
+	border: 5px solid #333232;
+	border-radius: 50%;
+	background-color: transparent;
+	width: 20px;
+	height: 20px;
+	border-right-color: transparent;
+}
+
+.Delete {
+	color: #db0e0e !important;
+}
+
+.titles-leaves {
+	position: relative;
+	display: grid;
+	height: auto;
+	grid-template-columns: 2.2fr 0.8fr;
+	align-items: end;
+	border-bottom: 2px solid #da2e2e;
+	padding: 5px 0px 3px 0px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#Fecha {
+
+	padding: 0px 15px;
+	border: 2px solid #333232;
+	border-radius: 10px;
+	font-weight: 800;
+	text-align: center;
+}
+
+#List-leaves {
+	margin: 5px 0px;
+	min-height: 67%;
+	max-height: 67% !important;
+	overflow-y: scroll !important;
+	border: solid var(--color1) 1px;
+}
+
+#List-leaves::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+#List-leaves::-webkit-scrollbar-thumb {
+	background: #bbbbbb;
+	border-radius: 5px;
+}
+
+#List-leaves::-webkit-scrollbar-track {
+	background: #c4c4c4cc;
+	border-radius: 5px;
+}
+
+.Footer-leaves {
+	padding: 5px;
+	font-size: 18px;
+	border: 1px solid #515151;
+}
+
+.Footer-leaves #Bruto,
+.Footer-leaves #Itbis,
+.Footer-leaves #Ley,
+.Footer-leaves .Total {
+	font-weight: bold;
+}
+
+.Footer-leaves #Total {
+	color: #0371c9;
+}
+
+.Footer-leaves div {
+	display: flex;
+	justify-content: space-between;
+}
+
+.Footer-leaves .Total {
+	font-size: 20px;
+}
+
+.Article {
+	border-bottom: 2px solid #21708e;
+}
+
+.Headers {
+	display: grid;
+	font-weight: bold;
+	grid-template-columns: 1.5fr 0.5fr auto;
+	gap: 0px 5px;
+	margin-right: 5px;
+	align-items: center;
+}
+
+.Items {
+	display: grid;
+	grid-auto-columns: 2fr;
+	grid-template-columns: 0.2fr 1.8fr;
+	gap: 0px 5px;
+}
+
+.Article .Count {
+	border-right: 2px solid #21708e;
+	text-align: center;
+	font-weight: bold;
+}
+
+.Article .Waiting {
+	background-color: #FF5722;
+}
+
+.Article h6,
+.Article h5 {
+	margin: 2px 0px;
+}
+
+.Article h6 {
+	display: inline-block;
+	width: 100%;
+}
+
+.Article h5 {
+	font-weight: 700;
+	text-align: right;
+}
+
+.Article div.Price {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1.5fr 0.5fr;
+	grid-gap: 5px;
+}
+
+.Article #Delete-Item {
+	display: grid;
+	justify-content: center;
+}
+
+.Article #Delete-Item i {
+	font-size: 25px;
+	color: #da2e2e;
+}
+
+.Article #Add-Item i {
+	font-size: 25px;
+	color: #007bff;
+}
+
+.Article .Details {
+	display: grid;
+	display: grid;
+	grid-template-columns: 0.14fr 1.8fr;
+	border-top: 2px solid #21708e;
+}
+
+.Article .Details div {
+	display: grid;
+	grid-auto-columns: 2fr;
+	grid-template-columns: 1fr 1fr;
+	padding-left: 5px;
+	margin-bottom: 0px;
+}
+
+.Article .Details div.one {
+	grid-template-columns: auto;
+}
+
+.Article span {
+	font-size: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.Article span::before {
+	font-family: "Font Awesome 5 Pro";
+	content: "\f111";
+	font-weight: bold;
+	font-size: 6px;
+	margin-right: 5px;
+}
+
+.letrero {
+	font-size: 18px;
+
+	border: none;
+	margin: 10px 0px;
+	border-radius: 5px;
+	padding: 6px;
+	background-color: #007bff;
+	color: #fff;
+	display: grid;
+	grid-template-columns: 20% 45% 30%;
+}
+
+.letrero span {
+	font-weight: bold;
+	text-align: left;
+}
+
+.letrero span:nth-child(3) {
+	text-align: right;
+}
+
+.linea {
+	border-top: 1px solid #000;
+}
+
+.swal2-actions .swal2-cancel {
+	font-weight: bold;
+	color: #000000 !important;
+}
+
+dialog#Nota {
+	width: 390px;
+	height: 405px;
+	border: 1px solid #000;
+	border-radius: 10px;
+}
+
+#Nota .Nota_Header {
+	text-align: center;
+}
+
+.Nota_Header h4 {
+	font-weight: bold;
+}
+
+#Nota .Nota_Body {
+	height: calc(100% - 138px);
+}
+
+
+.Nota_Body .Notas {
+	padding: 0px 10px;
+	box-sizing: border-box;
+}
+
+.Notas .Title {
+	display: block;
+	font-size: 16px;
+	font-weight: 800;
+}
+
+.Nota_Body textarea {
+	font-size: 16px;
+	font-weight: 600;
+	resize: none;
+	color: #dc3545;
+	width: -webkit-fill-available;
+	outline: none;
+}
+
+#Nota .Nota_Fotter {
+	height: 100px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 5px 10px;
+}
+
+
+.Nota_Fotter button {
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.Nota_Fotter #Print {
+	color: #fff;
+	background-color: #17a2b8;
+	border-color: #17a2b8;
+}
+
+
+.Nota_Fotter #Waiting {
+	color: #fff;
+	background-color: #FF5722;
+	border-color: #FF5722;
+}
+
+.Nota_Fotter #Cancel {
+	grid-column: span 2;
+	background-color: #ff9800;
+	border-color: #ff9800;
+}
+
+/** Resolutions **/
+
+@media (min-width: 600px) {
+	dialog#Nota {
+		width: 100vw;
+	}
+
+	.invoice {
+		margin: 10px 2vw;
+	}
+
+	.leaves {
+		height: 90%;
+	}
+
+	#List-leaves {
+		min-height: 64%;
+		max-height: 64% !important;
+	}
+
+	button#Retornar {
+		width: 96vw;
+		margin: 0 2vw;
+	}
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+	dialog#Nota {
+		width: 100vw;
+	}
+
+	.invoice {
+		margin: 10px 15vw;
+	}
+}
+
+@media (min-width: 1100px) {
+	.invoice {
+		margin: 10px 25vw;
+	}
+}

@@ -1,0 +1,82 @@
+body {
+	font-family: sans-serif;
+	background-color: #eee;
+}
+
+.navbar {
+	align-items: flex-end;
+}
+
+
+.bg-primary {
+	background-color: #4174af !important;
+}
+
+#Mozo {
+	display: inline-block;
+	margin: 0px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+div[disabled],
+button:disabled {
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+#Retornar {
+	font-size: 22px;
+	font-weight: bold;
+	display: inline-block;
+	border-radius: 10px;
+	width: 96vw;
+	height: 60px;
+	color: #fff;
+	background-color: #4174af;
+	border-color: #4174af;
+	border-style: solid;
+	margin: 0 2vw;
+}
+
+.List {
+	overflow-y: scroll !important;
+}
+
+.List::-webkit-scrollbar-thumb {
+	background: #bbbbbb;
+	border-radius: 5px;
+}
+
+.List::-webkit-scrollbar-track {
+	background: #c4c4c4cc;
+	border-radius: 5px;
+}
+
+.List::-webkit-scrollbar {
+	width: 8px;
+	height: 10px;
+}
+
+button:focus,
+input:focus {
+	outline: none;
+}
+
+.preloader {
+	display: -ms-flexbox;
+	display: flex;
+	background-color: #f4f6f9;
+	height: 100vh;
+	width: 100%;
+	transition: height .2s linear;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+}
+
+.preloader img{
+	height: auto;
+  width: 197px;
+}

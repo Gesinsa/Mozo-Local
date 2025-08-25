@@ -1,0 +1,390 @@
+html {
+	width: 100vw;
+}
+
+#Mesa {
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0px;
+}
+
+
+#Cantidad {
+	color: #fff;
+	border: solid 1px #dc3545;
+	background-color: #dc3545;
+	font-weight: bold;
+	height: 30px;
+	width: 30px;
+	border-radius: 15px;
+	position: absolute;
+	top: -3px;
+	right: -5px;
+}
+
+#Carrito {
+	position: relative;
+	color: #fff;
+	width: 50px;
+}
+
+.Header {
+	display: grid;
+	grid-template-columns: 0.2fr 1.8fr;
+	gap: 5px;
+	align-items: center;
+	margin-top: 5px;
+}
+
+#Title {
+	text-align: center;
+	font-weight: 750;
+	font-size: 25px;
+	color: #0371c9;
+}
+
+
+.Content {
+	display: grid;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 8px;
+	grid-template-columns: 1fr 185px;
+	grid-template-areas: "Estatus  Orden";
+	gap: 10px;
+}
+
+.Content .bulgy-radios {
+	grid-area: Orden;
+}
+
+
+.Content .bulgy-radios div {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+}
+
+.Content .radio {
+	background: #434343d4;
+}
+
+
+
+.Content div input:checked~.radio {
+	background-color: #FF5722;
+}
+
+.Content .subtitle {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.Content .Option {
+	display: flex;
+	align-items: flex-end;
+}
+
+
+.TypeCook {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+	box-sizing: border-box;
+}
+
+.TypeCook span {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.TypeCook select {
+	width: 140px;
+	border: 2px solid #439ee7;
+	border-radius: 15px;
+	height: 25px;
+	text-align: center;
+}
+
+
+.TypeCook select::-webkit-scrollbar {
+	width: 5px;
+}
+
+.TypeCook select::-webkit-scrollbar-thumb {
+	background: #bbbbbb;
+	border-radius: 5px;
+}
+
+.TypeCook select::-webkit-scrollbar-track {
+	background: #c4c4c4cc;
+	border-radius: 5px;
+}
+
+.TypeCook select:focus-visible {
+	outline: none;
+}
+
+
+
+.nota {
+	padding: 0px 10px;
+	box-sizing: border-box;
+	max-width: 100vw;
+}
+
+.nota .Title {
+	display: block;
+}
+
+textarea {
+	font-size: 16px;
+	font-weight: 600;
+	resize: none;
+	color: #dc3545;
+	width: -webkit-fill-available;
+	height: 70px;
+}
+
+textarea::placeholder {
+	font-weight: 700;
+	color: #dc3545;
+}
+
+
+textarea:focus-visible {
+	outline: none;
+}
+
+.Posicion {
+	padding: 5px 0px;
+	margin: 0 10px;
+	display: grid;
+	grid-template-columns: auto 95px;
+	grid-template-rows: 1fr;
+	gap: 10px;
+	justify-content: start;
+	align-items: center;
+	border-bottom: 2px solid #000;
+}
+
+.Posicion span {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.Posicion select {
+	border: 2px solid #439ee7;
+	border-radius: 15px;
+	height: 25px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.Posicion select::-webkit-scrollbar {
+	width: 5px;
+}
+
+.Posicion select::-webkit-scrollbar-thumb {
+	background: #bbbbbb;
+	border-radius: 5px;
+}
+
+.Posicion select::-webkit-scrollbar-track {
+	background: #c4c4c4cc;
+	border-radius: 5px;
+}
+
+
+.Posicion select:focus-visible {
+	outline: none;
+}
+
+.Details {
+	height: 43vh;
+	padding: 5px 10px;
+	margin-bottom: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/** Grupo **/
+
+.Grupos {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 5px;
+	min-height: 39vh;
+	max-height: 39vh;
+	margin-top: 5px;
+	border-top: black 2px solid;
+	padding-top: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.Title {
+	font-size: 19px;
+	font-weight: 600;
+}
+
+.Sub-Grupo {
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.Option {
+	display: block;
+	position: relative;
+	min-height: 30px;
+	padding-left: 40px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	font-size: 16px !important;
+	user-select: none;
+	color: #555;
+	letter-spacing: 1px;
+}
+
+.bulgy-radios input {
+	position: absolute;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+	left: -2000px;
+}
+
+.bulgy-radios input:checked~.radio {
+	background-color: #0ac07d;
+	transition: background 0.3s;
+}
+
+.radio {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	height: 30px;
+	width: 30px;
+	background: #c9ded6;
+	border-radius: 50%;
+}
+
+.radio::after {
+	content: "";
+	position: absolute;
+	opacity: 0;
+	top: 5px;
+	left: 5px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.bulgy-radios input:checked~.radio::after {
+	opacity: 1;
+}
+
+.bulgy-radios input:checked~.label {
+	color: #0bae72;
+}
+
+.bulgy-radios .label {
+	display: flex;
+	align-items: center;
+}
+
+/****/
+.Price {
+	font-size: 20px;
+	font-weight: 700;
+	margin: 0 10px 10px 10px;
+}
+
+.Price #Precio {
+	border-radius: 10px;
+	background-color: #28a745;
+	color: #fff;
+	padding: 0 10px;
+	font-weight: bold;
+}
+
+.Cantidad {
+	display: grid;
+	align-items: center;
+	grid-gap: 10px;
+	justify-items: center;
+}
+
+.Cantidad span {
+	font-size: 20px;
+	font-weight: 700;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.Cant {
+	border: 2px solid black;
+	padding: 3px;
+	border-radius: 10px;
+	width: 55%;
+	display: inline-flex;
+}
+
+.Cant input,
+.Cant button {
+	box-shadow: none !important;
+	border-color: #ffffff00 !important;
+	outline: 0 !important;
+}
+
+.Cant input {
+	font-size: 15px;
+	color: black;
+	font-weight: bold;
+}
+
+.Total {
+	margin: 10px;
+	border-top: 2px black solid;
+	text-align: center;
+	font-size: 23px;
+	color: #0371c9;
+	font-weight: bold;
+}
+
+
+#Retornar {
+	background-color: transparent;
+	color: black;
+	border-radius: 0px;
+	font-size: 22px;
+	border: none;
+	border-right: solid 2px black;
+	height: auto;
+	width: auto;
+	margin: 0;
+}
+
+#Menos {
+	margin-right: 9px;
+}
+
+#Agregar {
+	font-size: 18px;
+	font-weight: bold;
+	border: none;
+	border-radius: 10px;
+	width: 96vw;
+	margin: 0px 2vw;
+	height: 60px;
+	color: #fff;
+	background-color: #17a2b8;
+	border-color: #17a2b8;
+}

@@ -1,0 +1,169 @@
+.Status-Table {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 5px;
+	width: 70vw;
+	height: 40px;
+	border: 2px solid rgb(167, 167, 167);
+	border-radius: 20px;
+	padding: 2px;
+	position: relative;
+	margin: 10px auto;
+}
+
+.Options {
+	color: #fff;
+	border: none;
+	font-weight: 700;
+	padding: 10px auto;
+}
+
+.Options:focus,
+.Options:focus-visible {
+	outline: none;
+}
+
+.Options.badge-success {
+	border-radius: 20px 0px 0px 20px;
+}
+
+.Options.badge-danger {
+	border-radius: 0px 20px 20px 0px;
+}
+
+.Waiting{
+	background-color: #FF5722;
+	color: #fff;
+}
+
+.Waiting-primary{
+  background: linear-gradient(to right, #ff5722 50%, #007bff 50%);
+	color: #fff;
+}
+
+.Waiting-danger{
+  background: linear-gradient(to right, #ff5722 50%, #dc3545 50%);
+	color: #fff;
+}
+
+
+#List-Mesa {
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	grid-template-rows: repeat(5,1fr);
+	align-items: center;
+	gap: 5px;
+	margin: 0px 10px 15px 10px;
+	padding: 10px 15px;
+	min-height: 75vh;
+	max-height: 74vh !important;
+	overflow-y: scroll !important;
+	border: solid var(--color1) 1px;
+
+}
+
+#List-Mesa::-webkit-scrollbar {
+	width: 12px;
+	height: 10px;
+}
+
+#List-Mesa::-webkit-scrollbar-thumb {
+	background: #bbbbbb;
+	border-radius: 5px;
+}
+
+#List-Mesa::-webkit-scrollbar-track {
+	background: #c4c4c4cc;
+	border-radius: 5px;
+}
+
+.Mesa {
+	position: relative;
+	background-color: #60d3a7;
+	border-radius: 10px;
+	height: 110px;
+	margin: 10px;
+}
+
+.Mesa .Name{  
+	position: absolute;
+   top: -10px;
+	width: 100%;
+	text-align: center;
+}
+
+.Mesa .Name span{  
+   border-radius: 5px;
+   padding: 5px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+.Mesa button {
+	border: none;
+	position: absolute;
+	bottom: -15px;
+	left: 28%;
+	display: inline-block;
+	font-size: 22px;
+	font-weight: bold;
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+}
+
+.Mesa img {
+	position: absolute;
+	left: 10%;
+	height: 80%;
+	width: 80%;
+}
+
+
+
+/* Resolutions */
+
+@media (min-width: 340px) and (max-width: 500px) {
+	.Mesa button {
+		bottom: -10px;
+		left: 26%;
+		height: 40px;
+		width: 40px;
+   }
+
+	#List-Mesa {
+		grid-template-columns: repeat(3, 1fr);
+		margin: 0px 5px 15px 5px;
+		padding: 5px 5px;
+	}
+
+	#List-Mesa::-webkit-scrollbar {
+		width: 5px;
+	}
+}
+
+@media (min-width: 600px)  and (max-width: 640px) {
+	.Status-Table {
+		width: 98vw;
+		border-radius: 25px;
+		height: auto;
+	}
+
+	#List-Mesa {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+
+@media (min-width: 640px)  and (max-width: 867px) {
+	.Status-Table {
+		width: 95vw;
+		border-radius: 25px;
+		height: auto;
+	}
+
+	#List-Mesa {
+		grid-template-columns: repeat(5, 1fr);
+	}
+}
